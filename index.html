@@ -28,9 +28,11 @@
             <span class="logo-studio"> STUDIO </span>
           </a>
           <ul class="link-pages">
-            <li><a href="">Studio</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a href="" class="nav-current">Studio</a></li>
+            <li>
+              <a href="./portfolio.html" class="nav-underline">Portfolio</a>
+            </li>
+            <li><a href="" class="nav-underline">Contacts</a></li>
           </ul>
         </nav>
         <ul class="communication">
@@ -52,7 +54,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions<br />for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -541,5 +545,18 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL Script -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
