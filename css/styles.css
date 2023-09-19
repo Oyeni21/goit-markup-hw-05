@@ -633,17 +633,13 @@ ul {
 
 .modal-close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 24px; right: 24px; width: 24px; height: 24px;
     padding: 0px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: 30px;
-    height: 30px;
-
+    
     background-color: var(--cornflower);
     color: var(--navyblue);
     border: 1px solid rgba(0, 0, 0, 0.1);
